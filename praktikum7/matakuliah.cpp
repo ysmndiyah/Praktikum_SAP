@@ -52,7 +52,7 @@ bool scheduleExam(int graph[V][V], int m, int color[], int node)
 
 int main()
 {
-    // Matriks konflik mata kuliah
+    // Matriks konflik mata kuliah 
     int graph[V][V] =
     {
         {0,1,1,0,0},
@@ -62,7 +62,7 @@ int main()
         {0,0,1,1,0}
     };
 
-    // Menyimpan slot waktu
+    // Menyimpan slot waktu 
     int color[V] = {0};
 
     // Jumlah slot waktu

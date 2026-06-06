@@ -3,7 +3,7 @@ using namespace std;
 
 const int V = 4;
 
-// Mengecek apakah warna aman digunakan
+// Mengecek apakah warna 
 bool isSafe(int node, int graph[V][V], int color[], int c)
 {
     for(int i = 0; i < V; i++)
@@ -22,7 +22,7 @@ bool graphColoring(int graph[V][V], int m, int color[], int node)
     if(node == V)
         return true;
 
-    // Coba semua warna
+    // Coba semua warna 
     for(int c = 1; c <= m; c++)
     {
         // Cek apakah warna aman
@@ -34,7 +34,7 @@ bool graphColoring(int graph[V][V], int m, int color[], int node)
             if(graphColoring(graph, m, color, node + 1))
                 return true;
 
-            // Backtracking
+            // Backtracking disini ya ternyata
             color[node] = 0;
         }
     }
